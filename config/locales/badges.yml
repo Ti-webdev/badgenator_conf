@@ -1,0 +1,37 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  controllers:
+    badges:
+      actions:
+        create:
+          notice: 'Бейдж создан'
+        update:
+          notice: 'Бэйдж изменен'
+        destroy:
+          notice: 'Бэйдж удален'
+
+      titles:
+        edit: "Редактирование"
+        new: "Создание"
+
+  views:
+    badges:
+      links:
+        add_member: "Добавить участника"
+
+  activerecord:
+    attributes:
+      badge:
+        name: "Имя"
+        surname: "Фамилия"
+        company: "Компания"
+        profession: "Должность"
+
+    placeholders:
+      badge:
+        name: "Александр"
+        surname: "Пушкин"
+        company: "ОАО «Россия»"
+        profession: "Поэт"

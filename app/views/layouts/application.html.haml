@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title Badgenator
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    
+    = stylesheet_link_tag 'application', media: 'all'
+    = stylesheet_link_tag 'print', media: 'all'
+    = csrf_meta_tags
+
+  %body
+    .container-narrow
+      .masthead
+        %ul.nav.nav-pills.pull-right
+          %li.active
+            %a{href: "#"}= t "masthead.navigation.home"
+          %li
+            %a{href: "/archive"}= t "masthead.navigation.archive"
+          %li
+            %a{href: contacts_url}= t "masthead.navigation.contacts"
+
+          %h3.muted= t 'project_name'
+        %hr/
+
+        = yield
+
+        %hr/
+
+        .footer
+          %p
+            &copy;
+            %a{href: 'http://www.apress.ru/vac_popup?id=625&city=4', target: 'new'} Абак-пресс
+            и
+            %a{href: 'http://it-people.ru/', target: 'new'} IT-People
+            #{Time.now.year}
+      
+      = javascript_include_tag 'application'

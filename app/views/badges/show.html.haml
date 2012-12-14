@@ -1,0 +1,11 @@
+- if notice.present?
+  .alert.alert-success{data: {autoclose: true}}
+    = notice
+
+.btn-group.action-buttons
+  %button.btn{data: {click: "/"}}
+    = t 'forms.labels.back'
+  %button.btn.btn-primary{data: {click: "#"}}
+    = t 'forms.labels.edit'
+
+= render partial: 'badge'

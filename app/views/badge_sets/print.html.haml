@@ -1,0 +1,12 @@
+.raw.well
+  = link_to t('forms.labels.back'), "#", class: 'btn btn-large pull-right'
+  
+  %h4 Расположение листа бумаги будет
+  .btn-group.print-switcher{data: {toggle: 'buttons-radio'}}
+    %button.btn.btn-primary.active= t 'views.badge_sets.print.landscape'
+    %button.btn= t 'views.badge_sets.print.portrait'
+
+.badges
+  Бейджи, много бейджей
+  .page-brake
+        &nbsp;

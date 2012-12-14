@@ -1,0 +1,37 @@
+.alert.alert-success
+  Успех же!
+
+.row
+  = link_to t('views.badges.links.add_member'), "#", class: 'btn btn-large btn-primary pull-right'
+%br/
+
+.btn-group.action-buttons
+  %button.btn{data: {click: "/"}}
+    = t 'forms.labels.back'
+
+%table.table.table-hover
+  %thead
+    %tr
+      %th №
+
+      - %w(surname name company profession).each do |field|
+        %th= t(field, scope: 'activerecord.attributes.badge')
+
+      %th &nbsp;
+  %tbody
+    - %w(раз два три четыре).each_with_index do |badge, index|
+      %tr
+        %td= index + 1
+        %td= badge
+        %td Ночь
+        %td Улица
+        %td Фонарь
+        %td
+          .btn-group
+            %button.btn{data: {click: "/"}}= t('forms.labels.see')
+            %button.btn.dropdown-toggle{'data-toggle' => "dropdown"}
+              %span.caret
+            
+            %ul.dropdown-menu
+              %li
+                = link_to t('forms.labels.edit'), "#"

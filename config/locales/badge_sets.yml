@@ -1,0 +1,39 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  controllers:
+    badge_sets:
+      actions:
+        create:
+          notice: 'Набор создан'
+        update:
+          notice: 'Набор изменен'
+        destroy:
+          notice: 'Набор удален'
+
+      titles:
+        edit: "Редактирование"
+        new: "Создание"
+      
+  views:
+    badge_sets:
+      links:
+        add_set: "Добавить набор"
+      print:
+        portrait: "Портретное"
+        landscape: "Пейзажное"
+
+  activerecord:
+    errors:
+      models:
+        badge_set:
+          attributes:
+            source:
+              processing_error: "Ошибка при обработке файла"
+    attributes:
+      badge_set:
+        id: "Идентификатор"
+        name: "Название"
+        image: "Картинка"
+        source: "Файл с данными"

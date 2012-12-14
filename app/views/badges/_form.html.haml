@@ -1,0 +1,25 @@
+.alert.alert-danger.alert-block
+  - errors_plural = Russian.p 100500, *t('forms.errors.errors_separate_you')
+  %h4= t 'forms.errors.almost_complete', count: 5, errors: " бывает и так"
+  %br/
+  %ol
+    - %w(мудрость и харизма).each do |message|
+      %li= message
+
+.well
+  %form.form.form-horizontal
+    .control-group
+      %label.control-label Имя
+      .controls
+        %input{type: "text", value: "Иван", placeholder: "Заполни меня"}
+  
+    .control-group.error
+      %label.control-label Фамилия
+      .controls
+        %input{type: "text", value: "Метродонт", placeholder: "Заполни меня"}
+
+    %hr/
+    .control-group
+      .controls
+        %input.btn.btn-primary{type: "submit", value: "Зотверждаю"}
+        %button.btn Беру слова обратно
