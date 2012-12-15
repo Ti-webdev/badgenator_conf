@@ -11,15 +11,8 @@
   %body
     .container-narrow
       .masthead
-        %ul.nav.nav-pills.pull-right
-          %li.active
-            %a{href: "#"}= t "masthead.navigation.home"
-          %li
-            %a{href: "/archive"}= t "masthead.navigation.archive"
-          %li
-            %a{href: contacts_url}= t "masthead.navigation.contacts"
-
-          %h3.muted= t 'project_name'
+        = render_navigation
+        %h3.muted= t 'project_name'
         %hr/
 
         = yield

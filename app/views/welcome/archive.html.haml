@@ -14,11 +14,3 @@
       %tr
         %td= "Сет #{i}"
         %td
-          .btn-group
-            %button.btn{data: {click: "#"}}= t('forms.labels.see')
-            %button.btn.dropdown-toggle{'data-toggle' => "dropdown"}
-              %span.caret
-            
-            %ul.dropdown-menu
-              %li
-                = link_to t('forms.labels.delete'), "#", onclick: "alert('O, RLY!?')"
