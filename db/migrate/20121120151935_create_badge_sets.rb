@@ -1,7 +1,8 @@
 class CreateBadgeSets < ActiveRecord::Migration
   def change
-    create_table :table do |t|
-      t.string :column,  null:  false
+    create_table :badge_sets do |t|
+      t.string :name,  null:  false
+      t.string :image
       t.timestamps
     end
   end
