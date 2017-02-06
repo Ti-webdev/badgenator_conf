@@ -30,7 +30,7 @@ Badgenator
 ### Какие у него есть атрибуты?
 У сета всегда есть **название**. Может быть **картинка** и **источник** бейджей (файл содержащий в себе список бейджей).
 
-![badge sets edit](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badge_sets_edit.png)
+![badge sets edit](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badge_sets_edit.png)
 
 **Название:** Это строка, длиной от 2 до 50 символов. Является обязательным атрибутом сета.
 
@@ -75,11 +75,11 @@ Badgenator
 
 > **Внмание!** Если сетов загружено много (более 20 шт.), то появляется постраничная навигация.
 
-![badge sets index](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badge_sets_index.png)
+![badge sets index](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badge_sets_index.png)
 
 **Печать:** Это самая важная часть, т.к именно для этого и создавалось это приложение. Выводит список всех бейджей в сете и расставляет постраничные разрывы (для пейзажной печати это 4-е бейджа на страницу, для портретной печати это 3-и бейджа на страницу).
 
-![badge sets print](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badge_sets_print_1.png)
+![badge sets print](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badge_sets_print_1.png)
 
 ## Пожалуйста, поподробнее о «Бейджах»
 Под бейджем подразумевается прямоугольник, в котором написано кто вы, где работаете и кем.
@@ -87,7 +87,7 @@ Badgenator
 ### Какие у него есть атрибуты?
 У бейджа всегда есть **имя** и **компания**. Может быть **фамилия** и **профессия**.
 
-![badges edit](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badges_edit.png)
+![badges edit](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badges_edit.png)
 
 **Имя:** Это строка, длиной от 2 до 30 символов. Является обязательным атрибутом бейджа.  
 **Фамилия:** Это строка, длиной от 2 до 30 символов. Является не обязательным атрибутом бейджа.  
@@ -117,7 +117,7 @@ Badgenator
 
 **Просмотр одного бейджа:** Это отображение бейджа в том виде, в котором он идет на печать. В прямоугольник вписаны 4-е атрибута бейджа и скомпанованы таким образом Имя + Фамилия, Компания + Профессия.
 
-![badges show](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badges_show.png)
+![badges show](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badges_show.png)
 
 Так же присутствует изображение, которое было загружено для сета (размер badge), конечно, если оно имеется.
 
@@ -130,10 +130,10 @@ Badgenator
 
 > **Внмание!** Если бейджей загружено много (более 5 шт.), то появляется постраничная навигация.
 
-![badges index](https://github.com/Strech/badgenator_conf/raw/master/public/badgenator/badges_index.png)
+![badges index](https://raw.githubusercontent.com/Ti-webdev/badgenator_conf/master/public/badgenator/badges_index.png)
 
 ## Как же запустить
-На github.com нужно сделать форк репозитория https://github.com/Strech/badgenator_conf .
+На github.com нужно сделать форк репозитория https://github.com/Ti-webdev/badgenator_conf .
 
 После этого у Вас появится свой репозиторий с адресом https://github.com/<ваш логин на github>/badgenator_conf.
 
